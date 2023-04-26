@@ -10,6 +10,8 @@ Feature: login functionality
       | password | ahmet123            |
     Then  login should be successfull
 
+
+
   @Register
   Scenario: Register User
     Given user on "https://automationexercise.com/"

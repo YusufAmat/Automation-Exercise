@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = {"src/test/java/features/Login.feature"},
         glue = {"stepdefs"},
+        tags = "",
         plugin = {"pretty",
                 "json:test-output/cucumber-reports/cucumber.json"}
 )

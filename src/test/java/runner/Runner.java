@@ -7,7 +7,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = {"src/test/java/features/Login.feature"},
         glue = {"stepdefs"},
-        tags = "@Login"
+        tags = "@Login",
+        plugin = {"pretty",
+                "json:test-output/cucumber-reports/cucumber.json"}
 )
 
 public class Runner extends AbstractTestNGCucumberTests {
